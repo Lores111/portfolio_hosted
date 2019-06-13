@@ -1,11 +1,51 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta name="description" content="">
-  <meta charset="utf-8">
-  <title></title>
+	<title>Portfolio</title>
+	<meta name="description" content="Jest to projekt zaliczeniowy dla biegacza, informatyka, brata Boga, mgr Stanisława Loty">
+	<meta name="author" content="Wojciech Stefanek">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="jquery.js" type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
 </head>
 <body>
 
+
+		<!--HEADER-->
+		<header>
+			<nav>
+				<b id="mojeportfolio" onclick="chgCnt('home')">Moje Portfolio</b>
+					<table>
+						<tr>
+							<td onclick="chgCnt('home')">Home</td>
+							<td onclick="chgCnt('aboutme')">About me</td>
+							<td onclick="chgCnt('portfolio')">Portfolio</td>
+							<td onclick="chgCnt('blog')">Blog</td>
+							<td onclick="chgCnt('contact')">Contact</td>
+						</tr>
+					</table>
+			</nav>
+		</header>
+
+
+
+
+		<!--MAIN-->
+		<main>
+			<div id='home-content'><div id='box'><b id='imie'>Jan Nowak</b><br/><p>Profesjonalny programista_</p><div class='przycisk' id='omnie' onclick='chgCnt(\"aboutme\")'><b>Dowiedz się więcej</b></div></div><div id='boxbar'></div><div id='imgbox'></div></div>
+		</main>
+		
+		
+		<!--FOOTER-->
+		<footer>
+			ZSP inc. &copy; Wszelkie prawa zastrzeżone.
+		</footer>
 </body>
 </html>
